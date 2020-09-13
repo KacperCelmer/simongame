@@ -20,6 +20,11 @@ $(document).keydown(function() {
   }
 })
 
+$(".key").click(function(){
+  nextSequence();
+  started = !started;
+});
+
 function nextSequence() {
   $("h1").text("Level "+level);
 
